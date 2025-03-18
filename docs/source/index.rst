@@ -31,7 +31,6 @@ This product provides the following online documents.
 
 .. toctree::
    :maxdepth: 1
-   :caption: FNK0064
    :glob:
 
    fnk0064/codes/C.rst
