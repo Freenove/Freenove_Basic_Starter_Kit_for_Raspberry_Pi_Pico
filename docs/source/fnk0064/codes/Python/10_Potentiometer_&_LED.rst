@@ -4,6 +4,8 @@ Chapter Potentiometer & LED
 
 We have learnt to use ADC in the previous chapter. In this chapter, we will combine PWM and ADC to use potentiometer to control LED, RGBLED and Neopixel.
 
+.. _p_Soft_Light:
+
 Project Soft Light
 **************************************
 
@@ -56,7 +58,7 @@ Circuit
 Code
 =============================
 
-Open "Thonny", click "This computer" -> "D:" -> "Micropython_Codes" -> "10.1_Soft_LED" and double click "10.1_Soft_LED.py". 
+Open "Thonny", click "This computer" -> "D:" -> "Micropython_Codes" -> "09.1_Soft_LED" and double click "09.1_Soft_LED.py". 
 
 Soft_LED
 -----------------------------
@@ -73,7 +75,7 @@ Click "Run current script". Rotate the handle of potentiometer and the brightnes
 
 The following is the code:
 
-.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/10.1_Soft_LED/10.1_Soft_LED.py
+.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/09.1_Soft_LED/09.1_Soft_LED.py
     :linenos: 
     :language: python
     :lines: 1-12
@@ -81,7 +83,7 @@ The following is the code:
 
 In the code, read the ADC value of potentiometer and map it to the duty cycle of PWM to control LED brightness.
 
-Project 10.2 Soft Colorful Light 
+Project Soft Colorful Light 
 ********************************************
 
 In this project, three potentiometers are used to control the RGB LED and in principle, it is the same as the Soft Light project. Namely, read the voltage value of the potentiometer and then convert it to PWM used to control LED brightness. Difference is that the original project only controlled one LED, but this project required (3) RGB LEDs.
@@ -146,7 +148,7 @@ The following is the program code:
 
 In the code, you can read the ADC values of the three potentiometers and map it into a PWM duty cycle to control the three LED elements to vary the color of their respective RGB LED.
 
-Project 10.3 Soft Rainbow Light
+Project Soft Rainbow Light
 ****************************************
 
 In this project, we use a potentiometer to control Freenove 8 RGBLED Module.
@@ -216,3 +218,5 @@ The following is the program code:
     :dedent:
 
 The logic of the code is basically the same as the previous project :ref:`Rainbow Light<Rainbow>`. The difference is that in this code, the starting point of the color is controlled by the potentiometer.
+
+.. include:: 10.2_Potentiometer_&_LED.rst

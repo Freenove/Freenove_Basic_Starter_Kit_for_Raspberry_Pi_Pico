@@ -4,7 +4,7 @@ Chapter Buzzer
 
 In this chapter, we will learn about buzzers and the sounds they make.
 
-Project 7.1 Doorbell
+Project Doorbell
 *************************************
 
 We will make this kind of doorbell: when the button is pressed, the buzzer sounds; and when the button is released, the buzzer stops sounding.
@@ -123,7 +123,7 @@ Code
 
 In this project, a buzzer will be controlled by a push button switch. When the button switch is pressed, the buzzer sounds and when the button is released, the buzzer stops. It is analogous to our earlier project that controlled an LED ON and OFF.
 
-Open "Thonny", click "This computer" -> "D:" -> "Micropython_Codes" -> "07.1_Doorbell" and double click "07.1_Doorbell.py". 
+Open "Thonny", click "This computer" -> "D:" -> "Micropython_Codes" -> "06.1_Doorbell" and double click "06.1_Doorbell.py". 
 
 Doorbell
 -------------------------------------
@@ -138,7 +138,7 @@ Click "Run current script", press the push button switch and the buzzer will sou
 
 The following is the program code:
 
-.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/07.1_Doorbell/07.1_Doorbell.py
+.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/06.1_Doorbell/06.1_Doorbell.py
     :linenos: 
     :language: python
     :lines: 1-12
@@ -146,7 +146,7 @@ The following is the program code:
 
 The code is logically the same as using button to control LED. 
 
-Project 7.2 Alertor
+Project Alertor
 ********************************
 
 Next, we will use a passive buzzer to make an alarm.
@@ -196,7 +196,7 @@ Code
 
 In this project, the buzzer alarm is controlled by the button. Press the button, then buzzer sounds. If you release the button, the buzzer will stop sounding. Logically, it is the same as using button to control LED. As to the control method, passive buzzer requires PWM of certain frequency to sound.
 
-Open "Thonny", click "This computer" -> "D:" -> "Micropython_Codes" -> "07.2_Alertor", and double click "07.2_Alertor.py". 
+Open "Thonny", click "This computer" -> "D:" -> "Micropython_Codes" -> "06.2_Alertor", and double click "06.2_Alertor.py". 
 
 Alertor
 ------------------------------
@@ -210,7 +210,7 @@ If the buzzer sound is too loud or too low for you, you can modify duty cycle or
 
 The following is the program code:
 
-.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/07.2_Alertor/07.2_Alertor.py
+.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/06.2_Alertor/06.2_Alertor.py
     :linenos: 
     :language: python
     :lines: 1-24
@@ -218,7 +218,7 @@ The following is the program code:
 
 Import PWM, Pin, math and time modules.
 
-.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/07.2_Alertor/07.2_Alertor.py
+.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/06.2_Alertor/06.2_Alertor.py
     :linenos: 
     :language: python
     :lines: 1-3
@@ -226,7 +226,7 @@ Import PWM, Pin, math and time modules.
 
 Define the pins of the button and passive buzzer.
 
-.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/07.2_Alertor/07.2_Alertor.py
+.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/06.2_Alertor/06.2_Alertor.py
     :linenos: 
     :language: python
     :lines: 1-3
@@ -234,7 +234,7 @@ Define the pins of the button and passive buzzer.
 
 Call sin function of math module to create the frequency data of the passive buzzer.
 
-.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/07.2_Alertor/07.2_Alertor.py
+.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/06.2_Alertor/06.2_Alertor.py
     :linenos: 
     :language: python
     :lines: 9-14
@@ -242,7 +242,7 @@ Call sin function of math module to create the frequency data of the passive buz
 
 When not using PWM, please turn it OFF in time.
 
-.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/07.2_Alertor/07.2_Alertor.py
+.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/06.2_Alertor/06.2_Alertor.py
     :linenos: 
     :language: python
     :lines: 24-24

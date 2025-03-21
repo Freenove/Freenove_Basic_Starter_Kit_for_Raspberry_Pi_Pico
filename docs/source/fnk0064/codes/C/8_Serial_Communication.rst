@@ -135,7 +135,7 @@ Input texts like "ABCDEFG" in the Message Bar and press Enter to print the data 
 
 The following is the program code:
 
-.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_08.2_SerialRW/Sketch_08.2_SerialRW.ino
+.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_07.2_SerialRW/Sketch_07.2_SerialRW.ino
     :linenos: 
     :language: c
     :dedent:

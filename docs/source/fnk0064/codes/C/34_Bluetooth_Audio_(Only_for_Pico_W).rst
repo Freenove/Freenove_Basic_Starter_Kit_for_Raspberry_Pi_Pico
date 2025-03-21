@@ -120,7 +120,7 @@ The connection between the control board and the audio module is shown in the fi
 Sketch
 ============================
 
-Sketch_33.4_Bluetooth_By_PCM5102A
+Sketch_15.4_Bluetooth_By_PCM5102A
 -------------------------------------------
 
 .. image:: ../_static/imgs/34_Bluetooth_Audio_(Only_for_Pico_W)/Chapter34_02.png

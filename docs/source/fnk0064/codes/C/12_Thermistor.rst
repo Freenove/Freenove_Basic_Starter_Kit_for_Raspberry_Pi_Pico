@@ -112,7 +112,7 @@ Upload the code to Pico and serial monitor will display the current ADC, voltage
 
 The following is the code:
 
-.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_12.1_Thermometer/Sketch_12.1_Thermometer.ino
+.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_11.1_Thermometer/Sketch_11.1_Thermometer.ino
     :linenos: 
     :language: c
     :dedent:

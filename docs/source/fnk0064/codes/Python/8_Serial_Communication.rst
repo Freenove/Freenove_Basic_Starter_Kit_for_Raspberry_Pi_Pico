@@ -72,7 +72,7 @@ Connect Raspberry Pi Pico to the computer with USB cable.
 Code
 ============================
 
-Open "Thonny", click "This computer" -> "D:" -> "Micropython_Codes" -> "08.1_Serial_Print" and double "08.1_Serial_Print.py". 
+Open "Thonny", click "This computer" -> "D:" -> "Micropython_Codes" -> "07.1_Serial_Print" and double "07.1_Serial_Print.py". 
 
 Serial_Print
 -------------------------------------
@@ -87,7 +87,7 @@ Click "Run current script" and observe the changes of "Shell", which will displa
 
 The following is the program code:
 
-.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/08.1_Serial_Print/08.1_Serial_Print.py
+.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/07.1_Serial_Print/07.1_Serial_Print.py
     :linenos: 
     :language: python
     :lines: 1-3
@@ -169,7 +169,7 @@ Reference
     
     When usART0 or USART1 is used, it must be used with the serial port adapter board or serial port device. If not, you may not observe any symptoms.
 
-Project 8.2 Serial Read and Write
+Project Serial Read and Write
 *******************************************
 
 In the following example, we use Raspberry Pi Pico's UART1 to send data to UART0, and read the data received by UART0 and print it out through the "Shell".
@@ -191,8 +191,6 @@ Component List
 |  |Chapter08_15|                                                                    |
 +------------------------------------------------------------------------------------+
 
-.. |Chapter01_08| image:: ../_static/imgs/1_LED/Chapter01_08.png
-.. |Chapter01_09| image:: ../_static/imgs/1_LED/Chapter01_09.png
 .. |Chapter01_10| image:: ../_static/imgs/1_LED/Chapter01_10.png
 .. |Chapter08_15| image:: ../_static/imgs/8_Serial_Communication/Chapter08_15.png
 
@@ -216,7 +214,7 @@ Circuit
 Code
 ==========================
 
-Open "Thonny", click "This computer" -> "D:" -> "Micropython_Codes" -> "08.2_Serial_Read_and_Write" and double click "08.2_Serial_Read_and_Write_UART1_to_UART0.py". 
+Open "Thonny", click "This computer" -> "D:" -> "Micropython_Codes" -> "07.2_Serial_Read_and_Write" and double click "07.2_Serial_Read_and_Write_UART1_to_UART0.py". 
 
 Serial_Read_and_Write_UART1_to_UART0
 --------------------------------------------
@@ -231,7 +229,7 @@ Click "Run current script". Users can enter any data in "Shell" and press Enter.
 
 The following is the program code:
 
-.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/08.2_Serial_Read_and_Write/08.2_Serial_Read_and_Write_Usart0_to_Usart1.py
+.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/07.2_Serial_Read_and_Write/07.2_Serial_Read_and_Write_Usart0_to_Usart1.py
     :linenos: 
     :language: python
     :lines: 1-14
@@ -239,7 +237,7 @@ The following is the program code:
 
 Import UART、Pin and time modules.
 
-.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/08.2_Serial_Read_and_Write/08.2_Serial_Read_and_Write_Usart0_to_Usart1.py
+.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/07.2_Serial_Read_and_Write/07.2_Serial_Read_and_Write_Usart0_to_Usart1.py
     :linenos: 
     :language: python
     :lines: 1-2
@@ -247,7 +245,7 @@ Import UART、Pin and time modules.
 
 Create two UART objects and configure them as the parameters of UART0 and UART1.
 
-.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/08.2_Serial_Read_and_Write/08.2_Serial_Read_and_Write_Usart0_to_Usart1.py
+.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/07.2_Serial_Read_and_Write/07.2_Serial_Read_and_Write_Usart0_to_Usart1.py
     :linenos: 
     :language: python
     :lines: 4-5
@@ -255,7 +253,7 @@ Create two UART objects and configure them as the parameters of UART0 and UART1.
 
 Define a bytes value and assign it to rxDate.
 
-.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/08.2_Serial_Read_and_Write/08.2_Serial_Read_and_Write_Usart0_to_Usart1.py
+.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/07.2_Serial_Read_and_Write/07.2_Serial_Read_and_Write_Usart0_to_Usart1.py
     :linenos: 
     :language: python
     :lines: 8-8
@@ -263,7 +261,7 @@ Define a bytes value and assign it to rxDate.
 
 Define input_cnt to receive user input and convert it to a string format.
 
-.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/08.2_Serial_Read_and_Write/08.2_Serial_Read_and_Write_Usart0_to_Usart1.py
+.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/07.2_Serial_Read_and_Write/07.2_Serial_Read_and_Write_Usart0_to_Usart1.py
     :linenos: 
     :language: python
     :lines: 9-9
@@ -271,7 +269,7 @@ Define input_cnt to receive user input and convert it to a string format.
 
 myUsart1 calls write() function and writes the user input to UART1. 
 
-.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/08.2_Serial_Read_and_Write/08.2_Serial_Read_and_Write_Usart0_to_Usart1.py
+.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/07.2_Serial_Read_and_Write/07.2_Serial_Read_and_Write_Usart0_to_Usart1.py
     :linenos: 
     :language: python
     :lines: 10-10
@@ -279,7 +277,7 @@ myUsart1 calls write() function and writes the user input to UART1.
 
 myUsart0 calls the read() function to read the data sent by UART1 bit by bit and save the rxData in the received variable. When myUsart0 calls any() to determine whether UART0 has read the data, when any() returns 0, UART0 has read the data sent by UART1.
 
-.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/08.2_Serial_Read_and_Write/08.2_Serial_Read_and_Write_Usart0_to_Usart1.py
+.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/07.2_Serial_Read_and_Write/07.2_Serial_Read_and_Write_Usart0_to_Usart1.py
     :linenos: 
     :language: python
     :lines: 12-13
@@ -287,7 +285,7 @@ myUsart0 calls the read() function to read the data sent by UART1 bit by bit and
 
 The decode() function is called to decode the data and print it out to "Shell."
 
-.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/08.2_Serial_Read_and_Write/08.2_Serial_Read_and_Write_Usart0_to_Usart1.py
+.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/07.2_Serial_Read_and_Write/07.2_Serial_Read_and_Write_Usart0_to_Usart1.py
     :linenos: 
     :language: python
     :lines: 14-14

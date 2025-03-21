@@ -120,14 +120,14 @@ Download the code to Pico, open the serial monitor, and set the baud rate to 115
 
 The following is the code:
 
-.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_09.1_ADC/Sketch_09.1_ADC.ino
+.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_08.1_ADC/Sketch_08.1_ADC.ino
     :linenos: 
     :language: c
     :dedent:
 
 In loop() function, analogRead is called to get the ADC value of ADC0 and assign it to adcVal. Calculate the measured voltage value through the formula, and print these data through the serial port monitor.
 
-.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_09.1_ADC/Sketch_09.1_ADC.ino
+.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_08.1_ADC/Sketch_08.1_ADC.ino
     :linenos: 
     :language: c
     :lines: 14-16

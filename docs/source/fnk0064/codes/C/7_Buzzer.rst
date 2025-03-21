@@ -136,7 +136,7 @@ Download the code to Pico, press the push button switch and the buzzer will soun
 
 The following is the program code:
 
-.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_07.1_Doorbell/Sketch_07.1_Doorbell.ino
+.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_06.1_Doorbell/Sketch_06.1_Doorbell.ino
     :linenos: 
     :language: c
     :dedent:
@@ -206,14 +206,14 @@ Download the code to Pico, press the button, and then alarm sounds; when the but
 
 The following is the program code:
 
-.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_07.2_Aleror/Sketch_07.2_Aleror.ino
+.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_06.2_Aleror/Sketch_06.2_Aleror.ino
     :linenos: 
     :language: c
     :dedent:
 
 Define the button and pin to control the passive buzzer.
 
-.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_07.2_Aleror/Sketch_07.2_Aleror.ino
+.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_06.2_Aleror/Sketch_06.2_Aleror.ino
     :linenos: 
     :language: c
     :lines: 7-8
@@ -221,7 +221,7 @@ Define the button and pin to control the passive buzzer.
 
 Write a function to drive the passive buzzer with a duty cycle of 50%. The delayMicroseconds() function is in 1us. 1 s = 1000000 us. By the formula T=1/f, when the frequency is fixed, the PWM period T is also fixed.
 
-.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_07.2_Aleror/Sketch_07.2_Aleror.ino
+.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_06.2_Aleror/Sketch_06.2_Aleror.ino
     :linenos: 
     :language: c
     :lines: 33-45
@@ -229,7 +229,7 @@ Write a function to drive the passive buzzer with a duty cycle of 50%. The delay
 
 The frequency curve of the alarm is based on the sine curve. We need to calculate the sine value from 0 to 360 degree and multiply a certain value (here it is 500) and plus the resonant frequency of buzzer. 
 
-.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_07.2_Aleror/Sketch_07.2_Aleror.ino
+.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_06.2_Aleror/Sketch_06.2_Aleror.ino
     :linenos: 
     :language: c
     :lines: 23-31
@@ -237,7 +237,7 @@ The frequency curve of the alarm is based on the sine curve. We need to calculat
 
 In the loop() function, when the button is pressed, subfunction alert() will be called and the alertor will issue a warning sound; otherwise, it stops the buzzer. 
 
-.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_07.2_Aleror/Sketch_07.2_Aleror.ino
+.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_06.2_Aleror/Sketch_06.2_Aleror.ino
     :linenos: 
     :language: c
     :lines: 16-20

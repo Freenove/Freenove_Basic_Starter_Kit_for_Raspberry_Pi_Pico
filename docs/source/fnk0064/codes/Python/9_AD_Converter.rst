@@ -107,9 +107,9 @@ Circuit
 Code
 ===============================
 
-Open "Thonny", click "This computer" -> "D:" -> "Micropython_Codes" -> "09.1_AnalogRead and then click "09.1_AnalogRead.py". 
+Open "Thonny", click "This computer" -> "D:" -> "Micropython_Codes" -> "08.1_AnalogRead and then click "08.1_AnalogRead.py". 
 
-09.1_AnalogRead 
+08.1_AnalogRead 
 --------------------------
 
 .. image:: ../_static/imgs/9_AD_Converter/Chapter09_09.png
@@ -122,14 +122,14 @@ Click "Run current script" and observe the message printed in "Shell". Press Ctr
 
 The following is the code:
 
-.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/09.1_AnalogRead/09.1_AnalogRead.py
+.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/08.1_AnalogRead/08.1_AnalogRead.py
     :linenos: 
     :language: python
     :dedent:
 
 Import Pin, ADC and time modules.
 
-.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/09.1_AnalogRead/09.1_AnalogRead.py
+.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/08.1_AnalogRead/08.1_AnalogRead.py
     :linenos: 
     :language: python
     :lines: 1-2
@@ -137,7 +137,7 @@ Import Pin, ADC and time modules.
 
 Create an ADC object and connect GP26, which corresponds to ADC0 channel of Raspberry Pi Pico. 
 
-.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/09.1_AnalogRead/09.1_AnalogRead.py
+.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/08.1_AnalogRead/08.1_AnalogRead.py
     :linenos: 
     :language: python
     :lines: 4-4
@@ -145,7 +145,7 @@ Create an ADC object and connect GP26, which corresponds to ADC0 channel of Rasp
 
 Read ADC value every 0.1 second. Calculate the current voltage based on the formula ADCValue= (Analog Voltage)/3.3*65535 and print it to "Shell".
 
-.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/09.1_AnalogRead/09.1_AnalogRead.py
+.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/08.1_AnalogRead/08.1_AnalogRead.py
     :linenos: 
     :language: python
     :lines: 7-11
