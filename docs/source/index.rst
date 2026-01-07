@@ -35,3 +35,4 @@ This product provides the following online documents.
 
    fnk0064/codes/C.rst
    fnk0064/codes/Python.rst
+   fnk0064/codes/Product_Certification.rst
